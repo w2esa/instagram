@@ -1,0 +1,210 @@
+:root {
+  --btn-hidden: #b2defc;
+  --btn-visible: #3797f0;
+  --input-border-color: #dbdbdb;
+  --input-field-color: #f9f9f9;
+  --forget-password-text-color: #595959;
+  --forget-password-heading-text-color: #494949;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fafafa;
+  font-family: 'HelveticaNeue';
+}
+.form-btn {
+  font-family: 'HelveticaNeue' !important;
+  letter-spacing: 0.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  padding-top: 0.5rem !important;
+  height: 3rem;
+  background-color: var(--btn-hidden) !important;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem !important;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  -ms-border-radius: 0.4rem !important;
+  -o-border-radius: 0.4rem !important;
+}
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.success_container,
+.reset_container {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+}
+.reset-logo {
+  width: 17.5rem;
+  margin-bottom: 2.5rem;
+  transform: translate(32%, 10%);
+  -webkit-transform: translate(32%, 10%);
+  -moz-transform: translate(32%, 10%);
+  -ms-transform: translate(32%, 10%);
+  -o-transform: translate(32%, 10%);
+}
+.pass-guide {
+  border-radius: 0.2em;
+  font-family: arial;
+  font-weight: 300;
+  border: 1px solid var(--input-border-color);
+  background: var(--input-field-color);
+  font-size: 1.4rem;
+  margin-bottom: 3.5rem;
+  color: var(--forget-password-heading-text-color);
+  line-height: 1.5;
+  padding: 0.5rem;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+.reset-form-data {
+  width: 100%;
+  max-width: 38rem;
+  margin-top: 1rem;
+}
+.reset-form-data form {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--input-border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3.5rem;
+}
+.reset-form-data label {
+  color: var(--forget-password-heading-text-color);
+  font-size: 1.6rem;
+  font-family: arial;
+  font-weight: bold;
+}
+.reset-form-data form input {
+  font-weight: normal;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 0.2em;
+  background: var(--input-field-color);
+  outline: none;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+.reset-form-group {
+  padding-bottom: 1rem;
+}
+.reset-form-data .reset-pass {
+  color: #fff;
+  margin-top: 3rem;
+}
+.pra {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+}
+.loginShow {
+  background: var(--btn-visible) !important;
+}
+.form-facebook__logo img {
+  width: 35%;
+  padding-bottom: 3rem;
+  transform: translate(88%, 90%);
+  -webkit-transform: translate(88%, 90%);
+  -moz-transform: translate(88%, 90%);
+  -ms-transform: translate(88%, 90%);
+  -o-transform: translate(88%, 90%);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.success_container section {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--input-border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.success-logo {
+  width: 17.5rem;
+  margin-bottom: 2.5rem;
+  padding-top: 2rem;
+}
+
+.success-img img {
+  width: 10rem;
+}
+.success-pra {
+  text-align: center;
+}
+.success-title {
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.success-subtitle {
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: black;
+}
+
+@media (max-width: 450px) {
+  body {
+    background: #fff;
+  }
+  #wrapper {
+    padding-top: 0;
+  }
+  .success_container,
+  .reset_container {
+    margin-top: 0;
+  }
+  .reset-form-data form {
+    margin-top: 0;
+    border: none;
+  }
+  .success_container section{
+    border: none;
+  }
+}
